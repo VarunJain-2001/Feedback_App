@@ -31,6 +31,7 @@ class Feedback(db.Model):
         self.rating = rating
         self.comments = comments
 
+# Routes
 @app.route('/')
 def index():
     return render_template('index.html')
