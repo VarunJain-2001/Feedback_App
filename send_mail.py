@@ -1,6 +1,7 @@
 import smtplib
 from email.mime.text import MIMEText
 
+# Send Mail class
 def send_mail(customer, dealer, rating, comments):
     port = 2525
     smtp_server = 'smtp.mailtrap.io'
