@@ -17,6 +17,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
+# FeedBack Class
 class Feedback(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     customer = db.Column(db.String(200), unique = True)
